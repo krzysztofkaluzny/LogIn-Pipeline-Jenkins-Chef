@@ -1,0 +1,3 @@
+import hudson.slaves.*
+def javaHome = new EnvironmentVariablesNodeProperty(new EnvironmentVariablesNodeProperty.Entry('JAVA_HOME', '<%= node['devops_jenkins']['slave']['java_home'] %>'))
+hudson.model.Hudson.instance.slaves.each { it.nodeProperties.add(javaHome) }
