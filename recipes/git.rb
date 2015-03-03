@@ -34,5 +34,5 @@ cookbook_file '/var/lib/jenkins/.ssh/known_hosts' do
 end
 
 #$ sudo su jenkins
-#$ git config --global user.name "John Doe"
-#$ git config --global user.email johndoe@example.com
+#git config --global user.name "John Doe"
+#git config --global user.email johndoe@example.com
